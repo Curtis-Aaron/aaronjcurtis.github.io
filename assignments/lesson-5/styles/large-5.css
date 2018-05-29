@@ -48,4 +48,9 @@
         top: 70%; 
         right: 5%
     }
+    
+    .rain {
+        float: right;
+        height: 120px;
+    }
   }
