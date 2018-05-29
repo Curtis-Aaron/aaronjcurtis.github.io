@@ -1,4 +1,51 @@
 @media only screen and (min-width: 64em ) {
     
-  
+    .hamburger {
+        display:none;
+    }
+    
+    .sign {
+        width: 557px;
+        height: 200px;
+    }
+    
+    .weather {
+        position: relative;
+    }
+    
+   .now {
+        width: 575px;
+        position: relative;        
+        text-align: center;
+    }
+    
+    .sun {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+    }
+    
+    .sunny {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+    }
+    
+    .high {
+        position: absolute;
+        top: 40%;
+        left: 45%;
+    }
+    
+    .precip {
+        position: absolute;
+        top: 40%;
+        right: 5%;
+    }
+    
+    .wind {
+        position: absolute;
+        top: 70%; 
+        right: 5%
+    }
   }

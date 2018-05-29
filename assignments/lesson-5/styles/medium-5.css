@@ -1,4 +1,4 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
 
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
     
@@ -7,5 +7,38 @@
     section.forecast { display: inline; }  /* show the 10-day forecast with the medium view and up */
     
     nav{ display: inline; } 
+    
+    .hamburger {
+        display:none;
+    }
+    
+    footer {
+        font-size: 18px;
+    }
+    
+    .rain {
+        float: right;
+        height: 120px;
+    }
 
+    .article {
+        border: 1px solid gray;
+        margin-top: 10px;
+    }
+    
+    .sign {
+        float: left;
+    }
+    
+     .sun {
+    float: left;
+    }
+    
+    .high,.low,.precip,.wind {
+        margin-bottom: 10px;
+    }
+    
+    .sun {
+    max-height: 70px;
+    }
   }
