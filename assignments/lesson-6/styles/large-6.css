@@ -1,0 +1,60 @@
+@media only screen and (min-width: 64em ) {
+      
+    .hamburger {
+        display:none;
+    }
+    
+    .sign {
+        width: auto;
+        
+    }
+    
+    .weather {
+        position: relative;
+    }
+    
+   .now {
+        width: 575px;
+        height: 100px;
+        position: absolute;        
+        text-align: center;
+    }
+    
+    .sun {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+    }
+    
+    .rain {
+        float: right;
+        height: 120px;
+    }
+    
+     th, td {
+        border: 1px solid black;
+        padding-right: 8px;
+        text-align: center;
+    }
+    
+    .stats {
+        padding-top: 5px;
+        position: absolute;
+        left: 115px;
+    }
+    
+    h2 {
+        margin: 0;
+        padding-bottom: 40px;
+        position: relative;
+        right: 115px;
+        
+    }
+    
+    .franklin, .now {
+        display: inline-block;
+    }
+    .sunny, .high, .low, .precip, .wind {
+        padding-bottom: 10px;
+    }
+}
