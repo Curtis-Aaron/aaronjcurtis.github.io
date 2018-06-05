@@ -5,9 +5,12 @@
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-  font-size: 16px;
-  font-family: sans-serif; /* Declare the base font-family */
-    
+    font-size: 16px;
+    font-family: sans-serif; /* Declare the base font-family */
+    background-color: mediumspringgreen;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
@@ -54,8 +57,7 @@ h1 {
 }
 
 body {
-    font-size: 16px;
-    background-color: mediumspringgreen;
+    
 }
 
 header {
@@ -65,11 +67,15 @@ header {
 .title {
     margin-left: 25px;
     margin-top: 20px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.1em;
 }
 
 .active {
     position: relative;
     padding-top: 35px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 3em
 }
 
 .company {
@@ -104,7 +110,27 @@ a:hover {
     font-weight: none;
 }
 
+.navbar.responsive {
+    display: block;
+}
+
 @media only screen and (max-width: 37.5em) {
+    
+    .nav {
+        display: block;
+    }
+    
+    .navbar {
+        display: none;
+    }
+    
+    header {
+        height: 225px;
+    }
+    
+    body {
+        min-width: 450px;
+    }
     
     .sun {
         padding-right: 4px;
@@ -113,8 +139,8 @@ a:hover {
     .hamburger {
     display: inline;
     position: absolute;
-    top: 1.0rem;
-    right: 1.0rem;
+    top: 180px;
+    left: 25px;
     padding: 4px 13px;
     font-size: 30px;
     }
@@ -133,13 +159,13 @@ a:hover {
     display: none;
     }
     
-    .nav { display: block;}
-    
     .high {
     float: left;
     }
     
     .contact, .bar {
         font-size: 10px;
-    }
+    }    
+    
+    
 }

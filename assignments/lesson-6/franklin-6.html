@@ -9,9 +9,10 @@
         <link rel="stylesheet" href="styles/main-6.css">
         <link rel="stylesheet" href="styles/medium-6.css">
         <link rel="stylesheet" href="styles/large-6.css">
-        <link href="https://fonts.googleapis.com/css?family=Oxygen|PT+Sans+Narrow" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     </head>
-    <body>
+    <body onload="theDate()">
         <header>
             <img class="logo" src="images/overcast.png" alt="The site logo">
             <div class="company">
@@ -33,9 +34,9 @@
         <main>
             <div class="weather">
                 <div class="today">
-                    <div class="franklin">
-                        <img class="sign" src="images/franklin.jpg" alt="Welcome to Franklin sign">
-                    </div>
+                    <picture class="franklin">
+                        <img src="images/franklin-original.jpg" srcset="images/franklin-original.jpg, images/franklin-original350.jpg 2x, images/franklin-original375.jpg 3x">
+                    </picture>
                     <div class="now">                        
                         <img src="images/sun.png" alt="Sun" class="sun">
                         <h2>Franklin, ID</h2>
@@ -92,21 +93,22 @@
                 CIC owns and operates four private reservoirs in Franklin County: Glendale, Johnson, Lamont, and Foster. Their purpose is to store water for irrigation for agricultural needs. 
 
                 The Idaho Department of Agriculture Boat Check Station on the Utah/Idaho boarder in Franklin opened on March 30, and are open from daylight to dusk all season.
-                    <br>
+                </p><br>
                     <div class="link">
                         <a href="https://www.prestoncitizen.com/news/company-hopes-to-keep-reservoirs-open/article_9411c070-5adf-11e8-acfa-f3cfe80b597e.html" >Link: Company Hopes to Keep Reservoirs Open</a>
                     </div>
-                </p>
             </article>  
         </main>
         <footer>
-        <div class="contact">
-            <p>Active Weather</p>
-            <p>801.494.4729</p>
-            <p>529 S 880 W Spanish Fork, UT 84660</p>
-        </div>
-        <div class="bar">&copy;2018 | All Rights Reserved | Active Weather | <span id="currentdate">Current Date Placeholder</span>
-        </div>
-        </footer>        
+            <script src="scripts/date.js"></script>
+            <script src="scripts/menu.js"></script>
+            <div class="contact">
+                <p>Active Weather</p>
+                <p>801.494.4729</p>
+                <p>529 S 880 W Spanish Fork, UT 84660</p>
+            </div>
+            <div class="bar">&copy;2018 | All Rights Reserved | Active Weather | <span id="demo"></span> 
+            </div>
+        </footer>
     </body>
 </html>

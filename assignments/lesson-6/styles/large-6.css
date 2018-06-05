@@ -45,7 +45,7 @@
     
     h2 {
         margin: 0;
-        padding-bottom: 40px;
+        padding-bottom: 5px;
         position: relative;
         right: 115px;
         
@@ -54,7 +54,9 @@
     .franklin, .now {
         display: inline-block;
     }
+    
     .sunny, .high, .low, .precip, .wind {
-        padding-bottom: 10px;
+        padding-bottom: px;
+        margin-bottom: 3px;
     }
 }
