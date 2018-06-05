@@ -5,8 +5,8 @@
     }
     
     .sign {
-        width: 557px;
-        height: 200px;
+        width: auto;
+        
     }
     
     .weather {
@@ -15,7 +15,8 @@
     
    .now {
         width: 575px;
-        position: relative;        
+        height: 100px;
+        position: absolute;        
         text-align: center;
     }
     
@@ -35,6 +36,7 @@
         position: absolute;
         top: 40%;
         left: 45%;
+        
     }
     
     .precip {
@@ -53,4 +55,23 @@
         float: right;
         height: 120px;
     }
-  }
+    
+     th, td {
+        border: 1px solid black;
+        padding-right: 8px;
+        text-align: center;
+    }
+    
+    .stats {
+        padding-top: 5px;
+    }
+    
+    h2 {
+        margin: 0;
+        padding-bottom: 40px
+    }
+    
+    .franklin, .now {
+        display: inline-block;
+    }
+}

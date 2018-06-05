@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>Franklin City Weather</title>
+        <title>Active Weather: Franklin City Weather</title>
         <meta charset="UTF-8">
-        <meta name="description" content="Weather for Franklin City and surrounding area">
+        <meta name="description" content="Active Weather: Weather for Franklin City and surrounding area">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/main-5.css">
@@ -11,107 +11,103 @@
         <link rel="stylesheet" href="styles/large-5.css">
     </head>
     <body>
-        <div class="body">
-            <div class="header">
-                <header>
-                    <img class="logo" src="images/overcast.png" alt="The site logo">
-                    <div class="company">
-                        <h1 class="active">Active Weather</h1>
-                        <div class="title">Make the best of the Weather!</div>    
+        <header>
+            <img class="logo" src="images/overcast.png" alt="The site logo">
+            <div class="company">
+                <h1 class="active">Active Weather</h1>
+                <div class="title">Make the best of the Weather!</div>    
+            </div>
+            <button onclick="Menu()" class="hamburger">&#9776;</button>
+        </header>
+        <nav>
+            <ul class="navbar">
+                <li class="nav"><a href="#">Home</a></li>
+                <li class="nav"><a href="/assignments/lesson-5/franklin-5.html">Franklin</a></li>
+                <li class="nav"><a href="#">Greenville</a></li>
+                <li class="nav"><a href="#">Springfield</a></li>
+                <li class="nav"><a href="#">Storm Center</a></li>
+                <li class="nav"><a href="#">Gallery</a></li>
+            </ul>		
+        </nav>
+        <main>
+            <div class="weather">
+                <div class="today">
+                    <div class="franklin">
+                        <img class="sign" src="images/franklin.jpg" alt="Welcome to Franklin sign">
                     </div>
-                    <button onclick="Menu()" class="hamburger">&#9776</button>
-                </header>
-            </div>
-            <div>
-                <nav>
-                    <ul class="navbar">
-                        <li class="nav"><a href="#">Home</a></li>
-                        <li class="nav"><a href="/assignments/lesson-5/franklin-5.html">Franklin</a></li>
-                        <li class="nav"><a href="#">Greenville</a></li>
-                        <li class="nav"><a href="#">Springfield</a></li>
-                        <li class="nav"><a href="#">Storm Center</a></li>
-                        <li class="nav"><a href="#">Gallery</a></li>
-                    </ul>		
-                </nav>
-            </div>
-            <main>
-                <div class="weather">
-                    <div class="today">
-                        <div class="franklin">
-                            <img class="sign" src="images/Franklin.jpg">
-                        </div>
-                        <div class="now">
-                            <h2>Franklin, ID</h2>
-                            <img src="images/sun.png" alt="Sun" class="sun">
-                            <p class="sunny">Sunny</p>
-                            <div class="stats">
-                                <span class="temps">
-                                    <div class="high">High 90&deg;</div> 
-                                    <div class="low">Low 66&deg;</div>
-                                </span>                        
-                                <div class="precip">Precipitation: 0&percnt;</div>
-                                <div class="wind">Wind <span id="windspeed">5</span> mph SW</div> 
-                            </div>
+                    <div class="now">
+                        <h2>Franklin, ID</h2>
+                        <img src="images/sun.png" alt="Sun" class="sun">
+                        <p class="sunny">Sunny</p>
+                        <div class="stats">
+                            <div class="temps">
+                                <div class="high">High 90&deg;</div> 
+                                <div class="low">Low 66&deg;</div>
+                            </div>                        
+                            <div class="precip">Precipitation: 0&percnt;</div>
+                            <div class="wind">Wind <span id="windspeed">5</span> mph SW</div> 
                         </div>
                     </div>
                 </div>
-                <section class="forecast">
-                    <h3 class="tenday">Ten Day Forecast</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Day 1</th>
-                                <th>Day 2</th>
-                                <th>Day 3</th>
-                                <th>Day 4</th>
-                                <th>Day 5</th>
-                                <th>Day 6</th>
-                                <th>Day 7</th>
-                                <th>Day 8</th>
-                                <th>Day 9</th>
-                                <th>Day 10</th>
-                            </tr>
-                        </thead>
-                        <tbody>  
-                            <tr>
-                                <td>89&deg;F</td>
-                                <td>87&deg;F</td>
-                                <td>78&deg;F</td>
-                                <td>75&deg;F</td>
-                                <td>72&deg;F</td>
-                                <td>72&deg;F</td>
-                                <td>79&deg;F</td>
-                                <td>83&deg;F</td>
-                                <td>85&deg;F</td>
-                                <td>89&deg;F</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <article class="article">
-                    <h3>Franklin Reservoirs</h3>	
-                    <img src="images/rain.png" class="rain">
-                    <p class="article">Reservoirs in Franklin County will be open to public use Memorial Day weekend. The Consolidated Irrigation Company will follow the same action taken during the previous seasons to prevent the spread and risk of infestation by the Quagga and Zebra mussel. 
+            </div>
+            <section class="forecast">
+                <h3 class="tenday">Ten Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>  
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <article class="article">
+                <h3>Franklin Reservoirs</h3>	
+                <img src="images/rain.png" class="rain" alt="rain drops">
+                <p class="article">Reservoirs in Franklin County will be open to public use Memorial Day weekend. The Consolidated Irrigation Company will follow the same action taken during the previous seasons to prevent the spread and risk of infestation by the Quagga and Zebra mussel. 
 
-                    “The board of directors, at the direction of our shareholders, have not taken this risk lightly. We have proceeded with the combined goal of protecting water resources and infrastructure for its intended agricultural uses,” states a release from the Consolidated Irrigation Company (CIC).
+                “The board of directors, at the direction of our shareholders, have not taken this risk lightly. We have proceeded with the combined goal of protecting water resources and infrastructure for its intended agricultural uses,” states a release from the Consolidated Irrigation Company (CIC).
 
-                    CIC owns and operates four private reservoirs in Franklin County: Glendale, Johnson, Lamont, and Foster. Their purpose is to store water for irrigation for agricultural needs. 
+                CIC owns and operates four private reservoirs in Franklin County: Glendale, Johnson, Lamont, and Foster. Their purpose is to store water for irrigation for agricultural needs. 
 
-                    The Idaho Department of Agriculture Boat Check Station on the Utah/Idaho boarder in Franklin opened on March 30, and are open from daylight to dusk all season.
-                        <br>
-                        <a href="https://www.prestoncitizen.com/news/company-hopes-to-keep-reservoirs-open/article_9411c070-5adf-11e8-acfa-f3cfe80b597e.html">Link: Company Hopes to Keep Reservoirs Open</a>
-                    </p>
-                </article>  
-            </main>
-        </div>
+                The Idaho Department of Agriculture Boat Check Station on the Utah/Idaho boarder in Franklin opened on March 30, and are open from daylight to dusk all season.
+                    <br>
+                    <div class="link">
+                        <a href="https://www.prestoncitizen.com/news/company-hopes-to-keep-reservoirs-open/article_9411c070-5adf-11e8-acfa-f3cfe80b597e.html" >Link: Company Hopes to Keep Reservoirs Open</a>
+                    </div>
+                </p>
+            </article>  
+        </main>
         <footer>
-        <section class="contact">
-            Active Weather
-            801.494.4729
-            529 S 880 W Spanish Fork, UT 84660
-        </section>
-        <section class="footer-bar">&copy;2018 | All Rights Reserved | Active Weather | <span id="currentdate">Current Date Placeholder</span>
-        </section>
+        <div class="contact">
+            <p>Active Weather</p>
+            <p>801.494.4729</p>
+            <p>529 S 880 W Spanish Fork, UT 84660</p>
+        </div>
+        <div class="bar">&copy;2018 | All Rights Reserved | Active Weather | <span id="currentdate">Current Date Placeholder</span>
+        </div>
         </footer>        
     </body>
 </html>

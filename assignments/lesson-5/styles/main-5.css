@@ -18,32 +18,21 @@ header {
     text-align: left;
     margin: 10px;
 }
-header h1 {}
-header img {}
-header .subheading {}
-
-
-nav button {}
-nav ul {}
-nav ul li {}
-nav ul li a {}
-nav ul li.active a {}
-nav ul li a:hover {}
 
 main {
     padding-left: 5px;
 }
-main h2 {}
+
 main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { }
+
 
 footer {
     border-top:solid 1px black;
     text-align:center;
     bottom:0;
     width:100%;
-    margin-top:40px;
-    font-size:12px;
+    margin-top:30px;
+    background-color: bisque;
 }
 
 a {
@@ -69,7 +58,7 @@ body {
     background-color: mediumspringgreen;
 }
 
-.header {
+header {
     display: block;
 }
 
@@ -90,21 +79,31 @@ body {
 .nav {
     display: inline;
     border-top: solid 1px black;
-    border-width: thin;
-    border-color: black;
     padding: 10px;
     background-color: cyan;
 }
+
+
 
 .logo {
     max-height: 150px;
 }
 
-.sun {
+ .sun {
     max-height: 70px;
 }
 
+a:hover {
+    color: red;
+    text-decoration: none;
+    font-weight: none;
+}
+
 @media only screen and (max-width: 37.5em) {
+    
+    .sun {
+        padding-right: 4px;
+    }
     
     .hamburger {
     display: inline;
@@ -115,12 +114,9 @@ body {
     font-size: 30px;
     }
     
-    .sun {
-    max-height: 70px;
-    }
-    
     .sunny {
     float: left;
+    
     }
     
     .rain {
@@ -132,10 +128,13 @@ body {
     display: none;
     }
     
-    nav { display: none}
+    .nav { display: block;}
     
     .high {
     float: left;
-    margin-right: 20px;
+    }
+    
+    .contact, .bar {
+        font-size: 10px;
     }
 }
