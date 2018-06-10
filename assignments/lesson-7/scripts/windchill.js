@@ -23,7 +23,6 @@ var itFeelsLike = (35.74 + 0.6215 * t -35.75* a + .4275 * t * a).toFixed(2);
 //I got the formula from www.onlineconversion.com/windchill.htm.  
 //I verified the formula from a few separate sources as well
 
-
+console.log(itFeelsLike);
 return itFeelsLike;
-
 }
