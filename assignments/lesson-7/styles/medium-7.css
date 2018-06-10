@@ -2,9 +2,14 @@
 @media only screen and (max-width: 63.9em) {
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
     
-    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    /*nav button { display:none; }   hamburger button does not need to be shown in the medium on up views */
     
-    section.forecast { display: inline; }  /* show the 10-day forecast with the medium view and up */
+    section.forecast { 
+        display: inline-flex;
+        justify-content: center;
+        }  /* show the 10-day forecast with the medium view and up */
+    
+    
     
     .hamburger {
         display:none;
@@ -24,10 +29,10 @@
         margin-top: 10px;
     }
     
-    .sign {
+    /*.sign {
         float: left;
         
-    }
+    }*/
     
      .sun {
     float: left;
@@ -45,10 +50,6 @@
         border: 1px solid black;
         padding-right: 8px;
         text-align: center;
-    }
-    
-    footer {
-        font-size: .7em;
     }
     
     .stats {

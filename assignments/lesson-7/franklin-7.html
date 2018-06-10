@@ -11,8 +11,9 @@
         <link rel="stylesheet" href="styles/large-7.css">
         <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+        <script src="scripts/windchill.js"></script>
     </head>
-    <body onload="theDate()">
+    <body onload="theDate()" onload="windChill()">
         <header>
             <img class="logo" src="images/overcast.png" alt="The site logo">
             <div class="company">
@@ -28,7 +29,7 @@
                 <li class="nav"><a href="#">Greenville</a></li>
                 <li class="nav"><a href="#">Springfield</a></li>
                 <li class="nav"><a href="#">Storm Center</a></li>
-                <li class="nav"><a href="#">Gallery</a></li>
+                <li class="nav"><a href="/assignments/lesson-7/gallery-7.html">Gallery</a></li>
             </ul>		
         </nav>
         <main>
@@ -45,10 +46,11 @@
                         <h2>Franklin, ID</h2>
                         <div class="stats">
                             <div class="sunny">Sunny</div>
-                            <div class="high">High 90&deg;</div> 
+                            <div class="high">High <span class="hightemp">90</span>&deg;</div> 
                             <div class="low">Low 66&deg;</div>            
                             <div class="precip">Precipitation: 0&percnt;</div>
-                            <div class="wind">Wind <span id="windspeed">5</span> mph SW</div> 
+                            <div class="wind">Wind <span id="windspeed">5</span> mph SW</div>
+                            <div class="chill">Wind Chill<span id="demo2"></span></div>
                         </div>
                     </div>
                 </div>
