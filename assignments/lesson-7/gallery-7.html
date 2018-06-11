@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>Picture Gallery of Weather</title>
+        <title>Active Weather: Franklin City Weather</title>
         <meta charset="UTF-8">
-        <meta name="description" content="Gallery of interesting weather pictures">
+        <meta name="description" content="Active Weather: Weather for Franklin City and surrounding area">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/main-7.css">
         <link rel="stylesheet" href="styles/medium-7.css">
         <link rel="stylesheet" href="styles/large-7.css">
+        <link rel="stylesheet" href="styles/test.css">
+        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     </head>
-    <body>
+    <body onload="theDate()" onload="doInputOutput">
         <header>
             <img class="logo" src="images/overcast.png" alt="The site logo">
             <div class="company">
@@ -29,17 +32,18 @@
                 <li class="nav"><a href="gallery-7.html">Gallery</a></li>
             </ul>		
         </nav>
-        <main>   
-            <img src="images/gallery-hurricane.jpg" alt="hurricane from space"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada.</p>
-            <img src="images/gallery-ice-storm.jpg" alt="car in ice-storm"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada.</p>
-            <img src="images/gallery-lightningsun.jpg" alt="image showing both lightning and rays of sun"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada.</p>
-            <img src="images/gallery-snowstorm.jpg" alt="car driving in snowstorm"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada.</p>
-            <img src="images/gallery-tornado.jpg" alt="A tornado"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada.</p>
-            <img src="images/gallery-rainbow.jpg" alt="A double rainbow over a valley"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada.</p>
-        </main>
+        <div class="grid">
+            <div class="griditem"><img src="images/gallery-hurricane150.jpg" alt="hurricane from space" class="imgone"><p class="description1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada.</p></div>
+            <div class="griditem"><img src="images/gallery-ice-storm150.jpg" alt="car in ice-storm" class="imgtwo"><p class="description1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada.</p></div>
+            <div class="griditem"><img src="images/gallery-lightningsun150.jpg" alt="image showing both lightning and rays of sun" class="imgthree"><p class="description1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada.</p></div>
+            <div class="griditem"><img src="images/gallery-snowstorm150.jpg" alt="car driving in snowstorm" class="imgfour"><p class="description1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada.</p></div>
+            <div class="griditem"><img src="images/gallery-tornado150.jpg" alt="A tornado" class="imgfive"><p class="description1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada.</p></div>
+            <div class="griditem"><img src="images/gallery-rainbow150.jpg" alt="A double rainbow over a valley" class="imgsix"><p class="description1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada.</p></div>
+        </div>
         <footer>
             <script src="scripts/date.js"></script>
             <script src="scripts/menu.js"></script>
+            <script src="scripts/windchill.js"></script>
             <div class="contact">
                 <p>Active Weather</p>
                 <p>801.494.4729</p>

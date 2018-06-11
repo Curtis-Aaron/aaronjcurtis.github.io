@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     </head>
-    <body onload="theDate()" onload="windChill()">
+    <body onload="theDate()" onload="doInputOutput">
         <header>
             <img class="logo" src="images/overcast.png" alt="The site logo">
             <div class="company">
@@ -45,11 +45,11 @@
                         <h2>Franklin, ID</h2>
                         <div class="stats">
                             <div class="sunny">Sunny</div>
-                            <div class="high">High <span class="hightemp">90</span>&deg;</div> 
+                            <div class="high">High <span id="hightemp">90</span>&deg;</div> 
                             <div class="low">Low 66&deg;</div>            
                             <div class="precip">Precipitation: 0&percnt;</div>
                             <div class="wind">Wind <span id="windspeed">5</span> mph SW</div>
-                            <div class="chill">Wind Chill<span id="demo2"></span></div>
+                            <div class="chill">Wind Chill <span id="demo2"></span>&deg;</div>
                         </div>
                     </div>
                 </div>

@@ -36,8 +36,8 @@ footer {
     border-top:solid 1px black;
     text-align:center;
     /*bottom:0;
-    width:100%;
-    margin-top:30px;*/
+    width:100%;*/
+    margin-top:25px;
     background-color: bisque;
 }
 
@@ -91,8 +91,6 @@ h1 {
     background-color: cyan;
 }
 
-
-
 .logo {
     max-height: 150px;
 }
@@ -111,6 +109,12 @@ a:hover {
     display: block;
     
 }
+
+.griditem {
+        border: 1px solid black;
+        padding: 5px;
+}
+
 
 @media only screen and (max-width: 37.5em) {
     
@@ -150,7 +154,7 @@ a:hover {
     
     .rain {
     max-height: 70px;
-    float: left;
+    float: right;
     }
     
     table, .tenday {
@@ -163,7 +167,51 @@ a:hover {
     
     .contact, .bar {
         font-size: 10px;
-    }    
+    }
     
-    
+    .grid {
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-row-gap: 25px;
+        grid-row-gap:25px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        margin: 0% 3%;
+    }
+
+    .imgone {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .imgtwo {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    .imgthree {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+    .imgfour {
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+
+    .imgfive {
+        grid-column-start: 1;
+        grid-row-start: 5;
+    }
+
+    .imgsix {
+        grid-column-start: 1;
+        grid-row-start: 6;
+    }
+
+    .description1, .description2, .description3, .description4, .description5, .description6 {
+        width: 200px;
+    }
 }
