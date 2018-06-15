@@ -3,7 +3,8 @@
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid gray;
+    border-collapse: collapse;
 }
 
 thead, tfoot {
@@ -20,7 +21,7 @@ th, td {
 
 tbody tr:first-child {
     background-color: steelblue;
-    color: white;
+    color: #e7f0ed;
 }
 
 tbody tr:nth-child(even) {
@@ -33,5 +34,5 @@ tbody tr:nth-child(2n+3) {
 
 .oneallowed {
     background-color: steelblue;
-    color: white;
+    color: #e7f0ed;
 }
