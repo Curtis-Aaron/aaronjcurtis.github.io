@@ -20,6 +20,7 @@ th, td {
 
 tbody tr:first-child {
     background-color: steelblue;
+    color: white;
 }
 
 tbody tr:nth-child(even) {
@@ -28,4 +29,9 @@ tbody tr:nth-child(even) {
 
 tbody tr:nth-child(2n+3) {
     background-color: #e7ffed 
+}
+
+.oneallowed {
+    background-color: steelblue;
+    color: white;
 }
