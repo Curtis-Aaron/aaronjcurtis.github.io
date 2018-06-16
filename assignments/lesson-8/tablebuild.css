@@ -36,3 +36,7 @@ tbody tr:nth-child(2n+3) {
     background-color: steelblue;
     color: #e7f0ed;
 }
+
+thead tr {
+    font-weight: bold;
+}
