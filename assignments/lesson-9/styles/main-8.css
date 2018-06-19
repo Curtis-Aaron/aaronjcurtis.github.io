@@ -1,0 +1,313 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: sans-serif; /* Declare the base font-family */
+    background-color: mediumspringgreen;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 100%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header {
+    display: block;
+    text-align: left;
+    margin: 10px;
+}
+
+main {
+    padding-left: 5px;
+}
+
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    border-top:solid 1px black;
+    text-align:center;
+    /*bottom:0;
+    width:100%;*/
+    margin-top:25px;
+    background-color: bisque;
+}
+
+a {
+    color:black;
+    text-decoration:none;
+    font-weight:600;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 5px 20px;
+}
+
+.title {
+    margin-left: 25px;
+    margin-top: 20px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.1em;
+}
+
+.active {
+    position: relative;
+    padding-top: 35px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 3em
+}
+
+.company {
+    display: inline;
+    position: absolute;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.nav {
+    display: inline-flex;
+    flex-flow: row;
+    border-top: solid 1px black;
+    padding: 10px;
+    background-color: cyan;
+}
+
+.logo {
+    max-height: 150px;
+}
+
+ .sun {
+    max-height: 70px;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.navbar.responsive {
+    display: block;
+    
+}
+
+.griditem:hover {
+        
+        box-shadow: 3px 10px;
+}
+
+.griditem {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+form label.top, form div {
+    
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.middle input, form label.middle select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+#rating {
+    margin-left: 30px;
+}
+
+form fieldset label.danger {
+    display: block;
+    font-size: 1.2rem
+}
+
+form fieldset label.danger input {
+    margin-right: 5px;
+}
+
+form label.top input {
+    background-color: white;
+}
+
+form label.middle {
+    display: block;
+    padding: .75rem;
+    color: #555;
+}
+
+form input.button {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+
+
+@media only screen and (max-width: 37.5em) {
+    
+    .nav {
+        display: block;
+    }
+    
+    .navbar {
+        display: none;
+    }
+    
+    header {
+        height: 225px;
+    }
+    
+    body {
+        min-width: 450px;
+    }
+    
+    .sun {
+        padding-right: 4px;
+    }
+    
+    .hamburger {
+    display: inline;
+    position: absolute;
+    top: 180px;
+    left: 25px;
+    padding: 4px 13px;
+    font-size: 30px;
+    }
+    
+    .sunny {
+    float: left;
+    
+    }
+    
+    .rain {
+    max-height: 70px;
+    float: right;
+    }
+    
+    table, .tenday {
+    display: none;
+    }
+    
+    .high {
+    float: left;
+    }
+    
+    .contact, .bar {
+        font-size: 10px;
+    }
+    
+    .grid {
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-row-gap: 25px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        margin: 0% 3%;
+    }
+
+    .imgone {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .imgtwo {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    .imgthree {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+    .imgfour {
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+
+    .imgfive {
+        grid-column-start: 1;
+        grid-row-start: 5;
+    }
+
+    .imgsix {
+        grid-column-start: 1;
+        grid-row-start: 6;
+    }
+
+    .description1, .description2, .description3, .description4, .description5, .description6 {
+        width: 200px;
+    }
+    
+    .banner {
+        font-size: 1.8em;
+        text-align: center
+    }
+}

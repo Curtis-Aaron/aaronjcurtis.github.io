@@ -1,0 +1,111 @@
+@media only screen and (min-width: 37.5em) {
+@media only screen and (max-width: 63.9em) {
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    
+    /*nav button { display:none; }   hamburger button does not need to be shown in the medium on up views */
+    
+    section.forecast { 
+        display: inline-flex;
+        justify-content: center;
+        }  /* show the 10-day forecast with the medium view and up */
+    
+    
+    
+    .hamburger {
+        display:none;
+    }
+    
+    footer {
+        font-size: 18px;
+    }
+    
+    .rain {
+        float: right;
+        height: 120px;
+    }
+
+    .article {
+        border: 1px solid gray;
+        margin-top: 10px;
+    }
+    
+    /*.sign {
+        float: left;
+        
+    }*/
+    
+     .sun {
+    float: left;
+    max-height: 70px;
+    padding-right: 8px;
+    padding-left: 5px;
+    }
+        
+    .high,.low,.precip,.wind {
+        margin-bottom: 10px;
+        
+    }
+      
+    th, td {
+        border: 1px solid black;
+        padding-right: 8px;
+        text-align: center;
+    }
+    
+    .stats {
+        display: flex;
+        justify-content: space-around
+    }
+    
+    .franklin {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .grid {
+        display:grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-row-gap: 25px;
+        grid-column-gap: 25px; 
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        margin: 0% 3%;
+    }
+
+    .imgone {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .imgtwo {
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    .imgthree {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    .imgfour {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .imgfive {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+    .imgsix {
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+
+    .description1, .description2, .description3, .description4, .description5, .description6 {
+        width: 200px;
+    }
+  }
+}

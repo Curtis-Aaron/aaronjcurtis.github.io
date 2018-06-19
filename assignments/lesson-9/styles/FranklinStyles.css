@@ -1,0 +1,56 @@
+body
+{
+    background-color: skyblue;
+    
+}
+
+
+.headimg
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 28%
+}
+
+.citylink
+{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.title
+{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+nav ul li 
+{
+    display: inline;
+    font-size: 2em;
+    border: 1px solid black;
+    border-style: hidden;
+    margin-left: 25px;
+    
+        
+}
+
+.list1
+{
+    list-style: none;
+    overflow: auto;
+}
+
+.weather
+{
+    height: 40px;
+}
+
+.header
+{
+    position: relative;
+    text-align: center
+}
