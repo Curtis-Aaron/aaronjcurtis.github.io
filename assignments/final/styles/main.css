@@ -1,0 +1,197 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: sans-serif; /* Declare the base font-family */
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 100%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.nav {
+    display: inline-flex;
+    flex-flow: row;
+    border-top: solid 1px black;
+    padding: 6px;
+    background-color: #228B22;
+}
+
+.navbar.responsive {
+    display: block;   
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    max-height: 150px;
+}
+
+.company {
+    display: inline;
+    position: absolute;
+    
+}
+
+.spoke {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: none;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 3em
+}
+
+.title {
+    margin-left: 25px;
+    margin-top: 20px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.1em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    border-top:solid 1px black;
+    text-align:center;
+    /*bottom:0;
+    width:100%;*/
+    margin-top:25px;
+    background-color: #aa7243;
+}
+
+.info {
+    padding: none;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+form label.top, form div {
+
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.middle input, form label.middle select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+    form fieldset label.interest {
+    display: block;
+    font-size: 1.2rem
+}
+
+form fieldset label.interest input {
+    margin-right: 5px;
+}
+
+form label.top input {
+    background-color: white;
+}
+
+form label.middle {
+    display: block;
+    padding: .75rem;
+    color: #555;
+}
+
+form input.button {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+
+
+
+@media only screen and (max-width: 37.5em) {
+
+    .hamburger {
+    display: inline;
+    position: absolute;
+    top: 180px;
+    left: 25px;
+    padding: 4px 13px;
+    font-size: 30px;
+    }
+    
+    .nav {
+        display: block;
+    }
+    
+    .navbar {
+        display: none;
+    }
+    
+    .info, .bar {
+        font-size: 10px;
+    }
+    
+    .banner {
+        font-size: 1.8em;
+        text-align: center
+    }
+    
+    
+}
