@@ -10,6 +10,16 @@
         <link rel="stylesheet" href="styles/large.css">
         <link rel="stylesheet" href="styles/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>       
+        <script>
+            $(function(){
+                
+                $('.dropdownmenu > li').hover(function(){
+                    $(this).children("ul").slideToggle(200);
+                });
+
+            })
+	   </script>
     </head>
     <body onload="theDate()">
         <header>
@@ -31,8 +41,35 @@
             </ul>
         </nav>
         <main>
-        
-        
+            <div class="repairs">Sales</div>
+            <section class="salespage">
+                <div>
+                    <ul class="dropdownmenu">
+                        <li class="bike">Cannondale 2017<img src="images/cannondale-2017-cannondale-trail-5small.jpg" alt="cannondale 2017 mountain bike">
+                            <ul class="fall">
+                                <li class="price">$599</li>
+                                <li class="bike">The perfect ride for someone getting into mountain biking. The traill offers the best performance value on the mountain and is ready for anything from racing to full-blown trail duty.</li>
+                            </ul>
+                        </li>
+                        <li class="bike">Cannondale 2018<img src="images/cannondale-2018-cannondale-catalyst-4small.jpg" alt="cannondale 2018 mountain bike" class="bikepic">
+                            <ul class="fall">
+                                <li class="price">$399</li>
+                                <li class="bike">Satisfy your urge for adventure! The Catalyst is a lightweight Alloy frame, great riding position, and a wide range in gearing. Ride down the trail in confidence.</li>
+                            </ul>
+                        </li>
+                        
+                        <li class="bike">Cannondale 2018<img src="images/cannondale-2018-cannondale-fat-caad-2-slasmall.jpg" alt="cannondale 2018 fat tire mountain bike" class="bikepic">
+                            <ul class="fall">
+                                <li class="price">$1899</li>
+                                <li class="bike">A fatbike without the fat? The Fat CAAD 2 is so lightweight and the nimble front geometry gives you the agility on the trail and speed that you will want to ride this bike all year long!</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <p>*Prices are subject to change.
+                    <br>
+                    **Not all bikes are listed. If there are any questions don't hesitate to contact us at, <a href="contact-us.html">Click Here!</a></p>
         </main>
         <footer>
             <script src="scripts/date.js"></script>

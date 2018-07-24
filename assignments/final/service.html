@@ -9,7 +9,18 @@
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/large.css">
         <link rel="stylesheet" href="styles/normalize.css">
+        <script src="https//code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>       
+        <script>
+            $(function(){
+                
+                $('.dropdownmenu > li').hover(function(){
+                    $(this).children("ul").slideToggle(200);
+                });
+
+            })
+	   </script>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+        
     </head>
     <body onload="theDate()">
         <header>
@@ -31,8 +42,78 @@
             </ul>
         </nav>
         <main>
-        
-        
+            <section class="servicepage">
+                <div class="repairimage">
+                    <img class="repair" src="images/maintenancerepair.jpg" alt="bike repairs">
+                    <h1 class="repairs">Repairs</h1>
+                </div>
+                <div>
+                    <ul class="dropdownmenu">
+                        <li class="down">Tires
+                            <ul class="drop">
+                                <li class="tire">Flat Repair-$35</li>
+                                <li class="down">New Tube-$15</li>
+                                <li class="down">New Tire(back)-$55</li>
+                                <li class="down">New Tire(front)-$43</li>
+                            </ul>
+                        </li>
+                        <li class="down">Tune Up
+                            <ul class="drop">
+                                <li class="parts">Brakes &amp; Gears-$25 </li>
+                                <li class="parts">Whole Bike-$45</li>
+                            </ul>
+                        </li>
+                        <li class="down">Full Bike
+                            <ul class="drop">
+                                <li class="down">Bike Assemble $$ varies</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--<table>
+                    <thead>
+                        <tr>
+                            <th>Repair</th>
+                            <th>Cost</th>
+                            <th>Timeframe</th>
+                        </tr>
+                    </thead>
+                    <tbody>  
+                        <tr>
+                            <td>Flat repair</td>
+                            <td>$35</td>
+                            <td>Same Day</td>                            
+                        </tr>
+                        <tr>
+                            <td>Tune up </td>
+                            <td>$30</td>
+                            <td>Same Day</td>                            
+                        </tr>
+                        <tr>
+                            <td>New Tube</td>
+                            <td>$27.50</td>
+                            <td>Same Day</td>                            
+                        </tr>
+                        <tr>
+                            <td>New Tire</td>
+                            <td>$45</td>
+                            <td>2-3 days</td>                            
+                        </tr>
+                        <tr>
+                            <td>brake repair</td>
+                            <td>$10</td>
+                            <td>Same Day</td>                            
+                        </tr>
+                        <tr>
+                            <td>brke overhaul</td>
+                            <td>$75</td>
+                            <td>2 Days</td>                            
+                        </tr>
+                    </tbody>
+                </table>-->
+                <p>*Costs and Timeframe are subject to change depending on supplies on hand and shipping times.</p>
+                <p>**Not all possible repairs are listed. If there are any questions don't hesitate to contact us at, <a href="contact-us.html">Click Here!</a></p>
+            </section>
         </main>
         <footer>
             <script src="scripts/date.js"></script>
@@ -46,11 +127,4 @@
             </div>
         </footer>
     </body>
-    
-
-
-
-
-
-
 </html>

@@ -10,6 +10,7 @@ body {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #D6D6D6;
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
@@ -161,6 +162,96 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: green solid 6px;
 }
+
+.repair {
+    width: 100%;
+    height: 200px;
+}
+
+.repairs {
+    text-align: center;         
+}
+
+section.forecast { 
+        display: inline-flex;
+        justify-content: center;
+        }
+
+th, td {
+        border: 1px solid black;
+        padding-right: 8px;
+        text-align: center;
+    }
+
+.drop {
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	width:960px;
+	height:100px;
+	margin:auto;
+	list-style:none;
+	padding:0px;
+	border-top: 4px solid red;
+}
+
+.down {
+	width: 190px;
+	/*height: 48px;*/
+	float: left;
+	text-align: center;
+	background:rgb(240, 240, 240);
+	font-family: sans-serif;
+	line-height: 3.6;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+	font-size: 14px;
+	margin: 1px;
+}
+
+.down > .drop {
+	position:relative;
+	width:190px;
+	clear:both;
+	/* Hide the Submenus */
+	display:none;
+}
+
+.fall {
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	width:960px;
+	height:100px;
+	margin:auto;
+	list-style:none;
+	padding:0px;
+	border-top: 4px solid red;
+}
+
+.bike {
+	width: 190px;
+	float: left;
+	text-align: center;
+	background:rgb(240, 240, 240);
+	font-family: sans-serif;
+	line-height: 3.6;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+	font-size: 14px;
+	margin: 1px;
+}
+
+.bike > .fall {
+	position:relative;
+	width:190px;
+	clear:both;
+	/* Hide the Submenus */
+	display:none;
+}
+
 
 
 
