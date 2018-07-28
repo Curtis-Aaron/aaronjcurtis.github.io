@@ -39,10 +39,6 @@ ul {
     padding: 0;
 }
 
-.logo {
-    max-height: 150px;
-}
-
 .company {
     display: inline;
     position: absolute;
@@ -54,12 +50,12 @@ ul {
     padding-top: 5px;
     padding-bottom: none;
     font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 3em
+    margin-bottom: 0;
 }
 
 .title {
     margin-left: 25px;
-    margin-top: 20px;
+    
     font-family: 'Oxygen', sans-serif;
     font-size: 1.1em;
 }
@@ -165,11 +161,12 @@ form label.top input:required:valid {
 
 .repair {
     width: 100%;
-    height: 200px;
+    
 }
 
 .repairs {
-    text-align: center;         
+    text-align: center;  
+    border: 2px solid #7ec0ee;
 }
 
 section.forecast { 
@@ -183,6 +180,10 @@ th, td {
         text-align: center;
     }
 
+table {
+    
+}
+
 .drop {
 	position:absolute;
 	top:0px;
@@ -190,7 +191,7 @@ th, td {
 	left:0px;
 	right:0px;
 	width:960px;
-	height:100px;
+	/*height:100px;*/
 	margin:auto;
 	list-style:none;
 	padding:0px;
@@ -198,7 +199,6 @@ th, td {
 }
 
 .down {
-	width: 190px;
 	/*height: 48px;*/
 	float: left;
 	text-align: center;
@@ -224,7 +224,7 @@ th, td {
 	bottom:0px;
 	left:0px;
 	right:0px;
-	width:960px;
+	width:auto;
 	height:100px;
 	margin:auto;
 	list-style:none;
@@ -233,7 +233,6 @@ th, td {
 }
 
 .bike {
-	width: 190px;
 	float: left;
 	text-align: center;
 	background:rgb(240, 240, 240);
@@ -252,27 +251,137 @@ th, td {
 	display:none;
 }
 
+.grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        /*grid-column-gap: 5px;*/ 
+        justify-content: center;
+        text-align: center;
+        
+    }
 
+.cycle {
+    text-align: center;
+}
 
+.itenerary {
+    text-align: center;
+}
 
+.description {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.adrenaline {
+    text-align: center;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+/*.daily {
+    position: relative;
+}
+
+.subdaily {
+    position: absolute;
+}*/
+
+.dailyride {
+        margin-left: 10px;
+    }
+
+.daily {
+    border: 1px solid gray;
+    margin-left: 10px;
+}
+
+.hello {
+    float: left;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px; 
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin: 0% 3%;
+}
+
+.imgone {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.imgtwo {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.imgthree {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.imgfour {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.imgfive {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.imgsix {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.griditem {
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.griditemuno {
+    border: 1px solid black;
+    
+    font-weight: bold;
+    font-style: italic;
+}
 
 @media only screen and (max-width: 37.5em) {
 
     .hamburger {
-    display: inline;
-    position: absolute;
-    top: 180px;
-    left: 25px;
-    padding: 4px 13px;
-    font-size: 30px;
+        display: inline;
+        position: absolute;
+        top: 115px;
+        left: -75px;
+        padding: 4px 13px;
+        font-size: 30px;
+    }
+    
+    .contact {
+        display: inline;
+        position: absolute
+        margin-top: 35px;
     }
     
     .nav {
         display: block;
+        
     }
     
     .navbar {
         display: none;
+        top: 150px;
+        padding-top: 75px;
     }
     
     .info, .bar {
@@ -280,9 +389,53 @@ th, td {
     }
     
     .banner {
-        font-size: 1.8em;
-        text-align: center
+        font-size: 1em;
+        text-align: center;
+       
     }
     
+    .logo {
+        height: 100px;
+    }
+    
+    .spoke {
+        font-size: 1.9em;
+    }
+    
+    .title {
+        text-align: center;
+    }
+    
+    header {
+        padding-bottom: 65px;
+    }
+    
+    .down {
+        padding-right: 27px;
+        padding-left: 27px;
+        
+    }
+    
+    .drop {
+        text-align: center;
+    }
+    
+    .griditem:nth-child(odd) {
+        display: none;
+    }
+    
+    .griditemuno {
+        width: 100px;
+        font-size: 16px;
+    }
+    
+    .imgone, .imgthree, .imgfive, .imgseven, .imgnine {
+        width: 95px;
+    }
+    
+    .goaway {
+        display: none;
+    }
+   
     
 }

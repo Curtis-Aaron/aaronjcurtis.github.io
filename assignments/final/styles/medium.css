@@ -3,7 +3,32 @@
     .hamburger {
         display:none;
     }
-
-
+    
+    .logo {
+        max-height: 150px;
+    }
+    
+    .spoke {
+        font-size: 3em;
+    }
+    
+    .title {
+        margin-top: 20px;
+    }
+    
+    .bike {
+	width: 190px;
+    }
+    
+    .down {
+	width: 190px;
+    }
+    
+    #goaway {
+        display: none;
+    }
+    
+    
+        
   }
 }

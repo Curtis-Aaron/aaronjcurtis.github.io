@@ -16,23 +16,103 @@
             <img class="logo" src="images/logo.jpg" alt="The mountain biking site logo">
             <div class="company">
                 <h1 class="spoke">The Mountain Spoke</h1>
-                <div class="title">World-class biking for the world!</div>    
+                <div class="title">World-class biking for the world!</div>
+                <button onclick="Menu()" class="hamburger">&#9776;</button>  
             </div>
-            <button onclick="Menu()" class="hamburger">&#9776;</button>         
+            <nav>
+                <ul class="navbar">
+                    <li class="nav"><a href="home.html">Home</a></li>
+                    <li class="nav"><a href="adventure-tours.html">Adventure Tours</a></li>
+                    <li class="nav"><a href="events.html">Events</a></li>
+                    <li class="nav"><a href="sales.html">Sales</a></li>
+                    <li class="nav"><a href="service.html">Service</a></li>
+                    <li class="nav"><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>      
         </header>
-        <nav>
-            <ul class="navbar">
-                <li class="nav"><a href="home.html">Home</a></li>
-                <li class="nav"><a href="adventure-tours.html">Adventure Tours</a></li>
-                <li class="nav"><a href="events.html">Events</a></li>
-                <li class="nav"><a href="sales.html">Sales</a></li>
-                <li class="nav"><a href="service.html">Service</a></li>
-                <li class="nav"><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-        </nav>
         <main>
-        
-        
+            <h1 class="repairs">Events</h1>
+            <div class="grid">
+                <div class="griditem"><img src="images/continentaldivide-great_divide_ride.jpg" alt="couple riding on mountain trail" class="imgone"></div>
+                <div class="griditem"><img src="images/continentaldivide-loveland.jpg" alt="continental divide sign" class="imgtwo"></div>
+                <div class="griditem"><img src="images/continentaldivide-group.jpg" alt="image showing both lightning and rays of sun" class="imgthree"></div>                    
+            </div>
+            <h3 class="cycle">Cycle the Continental Divide-"The Great Divide Ride"</h3>
+            <p class="itenerary">Itenerary Sections</p>
+            <div style="overflow-x:auto;">   
+                <table>
+                    <thead>
+                        <tr>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Distance</th>
+                            <th class="goaway">Dates</th>
+                            <th class="goaway">Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>  
+                        <tr>
+                            <td>Jasper, AB** </td>
+                            <td>Antelope Wells, NM</td>
+                            <td>3084 miles</td>
+                            <td class="goaway">May 28-July 28, 2019</td>
+                            <td class="goaway">$3084</td>
+
+                        </tr>
+                        <tr>
+                            <td>Jasper, AB</td>
+                            <td>Roosville, MT</td>
+                            <td>589.1 miles</td>  
+                            <td class="goaway">May 28-June 6, 2019</td>
+                            <td class="goaway">$589</td>
+                        </tr>
+                        <tr>
+                            <td>Roosville, MT </td>
+                            <td>Helena, MT</td>
+                            <td>371.1 miles</td>
+                            <td class="goaway">June 8-June 15, 2019</td>
+                            <td class="goaway">$371</td>
+                        </tr>
+                        <tr>
+                            <td>Helena, MT</td>
+                            <td>Colter Bay, WY</td>
+                            <td>449.6 miles</td> 
+                            <td class="goaway">June 17-June 24, 2019</td>
+                            <td class="goaway">$449</td>
+                        </tr>
+                        <tr>
+                            <td>Colter Bay, WY</td>
+                            <td>Rawlins, WY</td>
+                            <td>365.5 miles</td>
+                            <td class="goaway">June 26-July 2, 2019</td>
+                            <td class="goaway">$365</td>
+                        </tr>
+                        <tr>
+                            <td>Rawlins, WY</td>
+                            <td>Salida, CO</td>
+                            <td>374.9 miles</td>
+                            <td class="goaway">July 3-July 10, 2019</td>
+                            <td class="goaway">$374</td>
+                        </tr>
+                        <tr>
+                            <td>Salida, CO</td>
+                            <td>Grants, NM</td>
+                            <td>539.2 miles</td> 
+                            <td class="goaway">July 11-July 20, 2019</td>
+                            <td class="goaway">$539</td>
+                        </tr>
+                        <tr>
+                            <td>Grants, NM</td>
+                            <td>Antelope Wells, NM</td>
+                            <td>394.4 miles</td> 
+                            <td class="goaway">July 21-July 28, 2019</td>
+                            <td class="goaway">$394</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="description" id="goaway">*For pricing and dates contact us, or view our full site.</p>
+            <p class="description">**The first leg shown above is to ride the entire trail from start to finish.<br><br>The Great Divide Mountain Bike Route (GDMBR) is Adventure Cycling's premier off-pavement cycling route, crisscrossing the Continental Divide in southern Canada and the U.S. This route is defined by the word "remote." Its remoteness equates with spectacular terrain and scenery. The entire route is basically dirt-road and mountain-pass riding every day. In total, it has over 200,000 feet of elevation gain. Nearly 2,100 miles of the route is composed of county, Forest Service, Bureau of Land Management (BLM), and Canadian provincial unpaved roads. The remainder is 60 miles of singletrack trails and 950 miles of paved roads including close to 50 miles of paved bike paths.</p>
         </main>
         <footer>
             <script src="scripts/date.js"></script>
@@ -40,17 +120,11 @@
             <div class="info">
                 <p>The Mountain Spoke</p>
                 <p>406-587-5404</p>
-                <p>3950 Valley Commons Drive Bozeman, MT</p>
+                <p>3950 Valley Commons Drive Bozeman, MT</p>  
             </div>
             <div class="bar">&copy;2018 | All Rights Reserved | The Mountain Spoke | <span id="demo"></span> 
             </div>
+            <a href="https://www.youtube.com/watch?v=gOTtoAp3IF8">My Presentation</a>
         </footer>
     </body>
-    
-
-
-
-
-
-
 </html>

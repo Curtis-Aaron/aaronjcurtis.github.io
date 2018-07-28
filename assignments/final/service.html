@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/large.css">
         <link rel="stylesheet" href="styles/normalize.css">
-        <script src="https//code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>       
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>       
         <script>
             $(function(){
                 
@@ -27,31 +27,31 @@
             <img class="logo" src="images/logo.jpg" alt="The mountain biking site logo">
             <div class="company">
                 <h1 class="spoke">The Mountain Spoke</h1>
-                <div class="title">World-class biking for the world!</div>    
+                <div class="title">World-class biking for the world!</div>
+                <button onclick="Menu()" class="hamburger">&#9776;</button>  
             </div>
-            <button onclick="Menu()" class="hamburger">&#9776;</button>        
+            <nav>
+                <ul class="navbar">
+                    <li class="nav"><a href="home.html">Home</a></li>
+                    <li class="nav"><a href="adventure-tours.html">Adventure Tours</a></li>
+                    <li class="nav"><a href="events.html">Events</a></li>
+                    <li class="nav"><a href="sales.html">Sales</a></li>
+                    <li class="nav"><a href="service.html">Service</a></li>
+                    <li class="nav"><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>      
         </header>
-        <nav>
-            <ul class="navbar">
-                <li class="nav"><a href="home.html">Home</a></li>
-                <li class="nav"><a href="adventure-tours.html">Adventure Tours</a></li>
-                <li class="nav"><a href="events.html">Events</a></li>
-                <li class="nav"><a href="sales.html">Sales</a></li>
-                <li class="nav"><a href="service.html">Service</a></li>
-                <li class="nav"><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-        </nav>
         <main>
             <section class="servicepage">
                 <div class="repairimage">
                     <img class="repair" src="images/maintenancerepair.jpg" alt="bike repairs">
                     <h1 class="repairs">Repairs</h1>
                 </div>
-                <div>
+                <div class="fix">
                     <ul class="dropdownmenu">
                         <li class="down">Tires
                             <ul class="drop">
-                                <li class="tire">Flat Repair-$35</li>
+                                <li class="down">Flat Repair-$35</li>
                                 <li class="down">New Tube-$15</li>
                                 <li class="down">New Tire(back)-$55</li>
                                 <li class="down">New Tire(front)-$43</li>
@@ -65,7 +65,7 @@
                         </li>
                         <li class="down">Full Bike
                             <ul class="drop">
-                                <li class="down">Bike Assemble $$ varies</li>
+                                <li class="down">Bike Assembly $$ varies</li>
                             </ul>
                         </li>
                     </ul>
@@ -111,9 +111,11 @@
                         </tr>
                     </tbody>
                 </table>-->
+            </section>
+            <div class="paragraphs">
                 <p>*Costs and Timeframe are subject to change depending on supplies on hand and shipping times.</p>
                 <p>**Not all possible repairs are listed. If there are any questions don't hesitate to contact us at, <a href="contact-us.html">Click Here!</a></p>
-            </section>
+            </div>
         </main>
         <footer>
             <script src="scripts/date.js"></script>
@@ -123,8 +125,7 @@
                 <p>406-587-5404</p>
                 <p>3950 Valley Commons Drive Bozeman, MT</p>
             </div>
-            <div class="bar">&copy;2018 | All Rights Reserved | The Mountain Spoke | <span id="demo"></span> 
-            </div>
+            <div class="bar">&copy;2018 | All Rights Reserved | The Mountain Spoke | <span id="demo"></span></div>            
         </footer>
     </body>
 </html>

@@ -16,66 +16,69 @@
             <img class="logo" src="images/logo.jpg" alt="The mountain biking site logo">
             <div class="company">
                 <h1 class="spoke">The Mountain Spoke</h1>
-                <div class="title">World-class biking for the world!</div>    
+                <div class="title">World-class biking for the world!</div>
+                <button onclick="Menu()" class="hamburger">&#9776;</button>  
             </div>
-            <button onclick="Menu()" class="hamburger">&#9776;</button>        
+            <nav>
+                <ul class="navbar">
+                    <li class="nav"><a href="home.html">Home</a></li>
+                    <li class="nav"><a href="adventure-tours.html">Adventure Tours</a></li>
+                    <li class="nav"><a href="events.html">Events</a></li>
+                    <li class="nav"><a href="sales.html">Sales</a></li>
+                    <li class="nav"><a href="service.html">Service</a></li>
+                    <li class="nav"><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>      
         </header>
-        <nav>
-            <ul class="navbar">
-                <li class="nav"><a href="home.html">Home</a></li>
-                <li class="nav"><a href="adventure-tours.html">Adventure Tours</a></li>
-                <li class="nav"><a href="events.html">Events</a></li>
-                <li class="nav"><a href="sales.html">Sales</a></li>
-                <li class="nav"><a href="service.html">Service</a></li>
-                <li class="nav"><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-        </nav>
-        <div class="banner">We want to hear from you. You are awesome!</div>
-        <form method="get">
-            <fieldset>
-                <legend>Biking Legend's(that's you) Information</legend>
-                    <label class="top">Full Name*<input type="text" pattern="[A-Za-z].{,5}" required></label>
-                    <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
-                    <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
-                    <label class="top">Zip Code*<input type="number" required></label>
-            </fieldset>
-            <fieldset>
-                <legend>Specific Information</legend>
-                    <div>Date of Visit</div><label class="middle"><input type="date" name="stormDate"></label>
-                    <div>Reason for Visit</div>
-                    <label class="middle">
-                        <input list="visittypes">
-                        <datalist id="visittypes">for
-                            <option value="Adventure Tours"></option>
-                            <option value="Events"></option>
-                            <option value="Bike Sales"></option>
-                            <option value="Repair or Service"></option>
-                            <option value="Tornado-Or Other"></option>
-                        </datalist>
-                    </label>
-                    
-                    <div>Where are you from?</div>
-                    <label class="middle">
-                        <select name="stormRegion">
-                            <option value="">Select Region...</option>
-                            <option value="montana">Montana</option>
-                            <option value="usa">USA-outside of MT</option>
-                            <option value="canadamex">Canada/Mexico</option>
-                            <option value="international">International besides Canada/Mexico</option>
-                        </select>
-                    </label>
-                        <div class="level">Level of Interest</div>
-                        <br>
-                        <label class="interest"><input type="radio" name="levelofinterest" value="very">Very</label>
-                        <label class="interest"><input type="radio" name="levelofinterest" value="curious">Just Curious</label>
-                        <label class="interest"><input type="radio" name="levelofinterest" value="asking">Asking for a Friend</label >
-                    </fieldset>
-            <fieldset>
-                <legend>Additional Information or Comments</legend>
-                <div>Text Here:</div><label class="top"><textarea rows="5" cols="50"></textarea></label>
-            </fieldset>
-            <label><input type="submit" value="Let me know!  " class="button"></label>
-        </form> 
+        
+        <div class="contact">
+            <div class="banner">We want to hear from you. You are awesome!</div>
+            <form method="get">
+                <fieldset>
+                    <legend>Biking Legend(that's you) Information</legend>
+                        <label class="top">Full Name*<input type="text" pattern="[A-Za-z].{,5}" required></label>
+                        <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                        <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                        <label class="top">Zip Code*<input type="number" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Specific Information</legend>
+                        <div>Date of Visit</div><label class="middle"><input type="date" name="stormDate"></label>
+                        <div>Reason for Visit</div>
+                        <label class="middle">
+                            <input list="visittypes">
+                            <datalist id="visittypes">for
+                                <option value="Adventure Tours"></option>
+                                <option value="Events"></option>
+                                <option value="Bike Sales"></option>
+                                <option value="Repair or Service"></option>
+                                <option value="Tornado-Or Other"></option>
+                            </datalist>
+                        </label>
+
+                        <div>Where are you from?</div>
+                        <label class="middle">
+                            <select name="stormRegion">
+                                <option value="">Select Region...</option>
+                                <option value="montana">Montana</option>
+                                <option value="usa">USA-outside of MT</option>
+                                <option value="canadamex">Canada/Mexico</option>
+                                <option value="international">International besides Canada/Mexico</option>
+                            </select>
+                        </label>
+                            <div class="level">Level of Interest</div>
+                            <br>
+                            <label class="interest"><input type="radio" name="levelofinterest" value="very">Very</label>
+                            <label class="interest"><input type="radio" name="levelofinterest" value="curious">Just Curious</label>
+                            <label class="interest"><input type="radio" name="levelofinterest" value="asking">Asking for a Friend</label >
+                        </fieldset>
+                <fieldset>
+                    <legend>Additional Information or Comments</legend>
+                    <div>Text Here:</div><label class="top"><textarea rows="5" cols="50"></textarea></label>
+                </fieldset>
+                <label><input type="submit" value="Let me know!  " class="button"></label>
+            </form>
+        </div>
         <footer>
             <script src="scripts/date.js"></script>
             <script src="scripts/menu.js"></script>

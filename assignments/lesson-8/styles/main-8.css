@@ -116,6 +116,9 @@ a:hover {
 .griditem {
     border: 1px solid black;
     padding: 5px;
+    font-weight: bold;
+    font-style: italic;
+    vertical-align: middle;    
 }
 
 form fieldset {
@@ -265,11 +268,14 @@ form label.top input:required:valid {
         display:grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
-        grid-row-gap: 25px;
+        grid-row-gap: 10px;
         justify-content: center;
         text-align: center;
+        align-items: center;
+        align-content: center;
         margin-top: 20px;
         margin: 0% 3%;
+        font-weight: bold;
     }
 
     .imgone {
@@ -301,6 +307,27 @@ form label.top input:required:valid {
         grid-column-start: 1;
         grid-row-start: 6;
     }
+    
+
+    
+    /*.imgtwo, .imgfour, .imgsix, .imgeight {
+        font-weight: bold;
+    }*/
+    
+    /*.imgsix {
+        grid-column-start: 1;
+        grid-row-start: 7;
+    }
+    
+    .imgsix {
+        grid-column-start: 1;
+        grid-row-start: 8;
+    }
+    
+    .imgsix {
+        grid-column-start: 1;
+        grid-row-start: 9;
+    }*/
 
     .description1, .description2, .description3, .description4, .description5, .description6 {
         width: 200px;
